@@ -39,7 +39,7 @@ function CheckLogin(req, res) {
 
 app.get("/", (req, res) => {
     if(CheckLogin(req, res)){
-        res.render("index.html", { email: req.session.user.email});
+        res.render("index.html", { user: req.session.user });
     }
     else{
         res.redirect("/login");

@@ -9,12 +9,7 @@ const password = process.env.MONGODB_PASSWORD;
 
 
 mongoose.connect(
-    `mongodb+srv://${username}:${password}@cluster0.2asz5h9.mongodb.net/users?retryWrites=true&w=majority`,
-    {
-        useNewUrlParser: true,                                                                                                                                                                                                                                                         
-        useUnifiedTopology: true,
-    }
-).then(()=>{
+    `mongodb+srv://${username}:${password}@cluster0.2asz5h9.mongodb.net/users?retryWrites=true&w=majority`,).then(()=>{
     console.log("Database connection successfull");
 })
 .catch(()=>{

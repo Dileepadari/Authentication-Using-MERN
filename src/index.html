@@ -41,12 +41,13 @@
 <body>
     <div class="card">
         <div>
-            You are Successfully logged in. <br>
+            <h1>Welcome <%= user.name %> </h1>
+            You are Successfully logged in with mail <span id="email"><%= user.email %></span>. <br>
             This is Both Registration and Login system with validated and hashed password. <br>
             Made for Bharat Intern by Dileepkumar Adari.
             <br><br>
             <a class="logout" href="/logout">logout</a><br>
         </div>
-    </div>    
+    </div>          
 </body>
 </html>
